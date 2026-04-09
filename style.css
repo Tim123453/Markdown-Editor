@@ -5,7 +5,8 @@ body {
 .header {
   display: flex;
   jusitfy-content: space-between;
-  align-items: center 
+  align-items: center;
+  background-color: lightgray;
 }
 
 .title {
