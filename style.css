@@ -1,5 +1,6 @@
 body {
   font-family: Arial;
+  padding:0;
 }
 
 .header {
@@ -32,11 +33,12 @@ body {
   align-items:flex-start;
 }
 
-.textarea {
+textarea {
   padding:10px;
   border:none;
   border-radius:20px;
   width:30%;
+  min-height:300px;
 }
 
 .input-button {
