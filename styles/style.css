@@ -15,13 +15,25 @@ body {
 }
 
 .header-left-section {
-
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color:white;
   background-color: transparent;
-  border:none
+  border:none;
+  height:40px;
+  width:40px;
+  border-radius:50%;
+}
+.header-button:hover {
+  background-color: rgba(90, 90, 90, 0.3);
+  cursor:pointer;
 }
 
 .icon {
@@ -30,53 +42,88 @@ body {
   background-color: transparent;
 }
 
-.title {
+h1 {
   font-size: 1em;
-  font-weight: bold;
+  margin:0px;
+  font-weight: bolder;
+}
+
+.header-right-section {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main {
   display:flex;
   justify-content: space-between;
-  align-items: center 
+  align-items: center;
+  height:600px;
 }
 
-.input-form {
-  display:flex;
-  justify-content: space-evenly;
-  align-items:center;
-}
 
-.input-form-left {
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-}
-
-textarea {
-  padding:10px;
-  border: 1px solid rgb(55, 55, 55);
-  border-radius:20px;
-  width:30%;
-  min-height:300px;
+.main-left-section, .main-right-section {
+  position: relative;
+  border: 0;
+  border-left:1px solid rgb(55, 55, 55);
+  border-radius:0px;
+  width:50%;
+  height:100%;
+  padding: 0px;
   background-color: rgb(28, 28, 28);
   color:white;
 }
 
+.main-left-section {
+
+}
+
+textarea {
+  resize: none;
+  background-color: transparent;
+  border:none;
+  width:100%;
+  height:100%;
+  padding:15px;
+  font-size: 1.25em;
+  color:white;
+}
+textarea:focus {
+  border:none;
+  outline:none;
+}
+textarea::placeholder {
+  color:gray;
+}
+
+.main-right-section {
+
+}
+
+.output-text {
+  padding:15px;
+  margin: 0px;
+}
+
+.layout-button-left, .layout-button-right {
+ position: absolute;
+}
+
+
 .input-button {
-    background-image: linear-gradient(225deg, #414091, #682F78);
-    border:none;
-    border-radius: 40px;
-    padding-top:25px;
-    padding-bottom: 25px;
-    padding-right: 50px;
-    padding-left: 50px;
-    color: rgb(225, 225, 225);
-    font-weight: bold;
-    font-size:1.5em;
-    margin-right:-50px;
+  background-image: linear-gradient(225deg, #414091, #682F78);
+  border:none;
+  border-radius: 40px;
+  padding-top:25px;
+  padding-bottom: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: rgb(225, 225, 225);
+  font-weight: bold;
+  font-size:1.5em;
+  margin-right:-50px;
 }
 .input-button:hover {
-    background-image: linear-gradient(225deg, #343369, #4a2255);
-    cursor: pointer;
+  background-image: linear-gradient(225deg, #343369, #4a2255);
+  cursor: pointer;
 }
